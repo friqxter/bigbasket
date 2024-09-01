@@ -1,0 +1,239 @@
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    
+    
+    border-radius: .25rem;
+}
+
+.item img {
+    width: 64px;
+}
+
+.item {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item a:hover {
+    color: blue;
+}
+
+.card {
+    padding: 20px;
+    margin: 30px;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.bg-bskt{
+    background-color: #A0CD4A;
+ }
+ 
+ .container2{
+    background-color: 
+    #ececec;
+    width: 83.6%;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+   
+ }
+
+
+
+ .smart-basket-container {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 50px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .smart-basket-title {
+    color: #000;
+    font: 400 30px Inter, sans-serif;
+    margin-left: 4px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    border-radius: 13px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 44px;
+    width: 223px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 14px 18px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .product-image-container {
+    border-radius: 7px;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: var(--sds-color-text-brand-on-brand);
+    white-space: nowrap;
+    padding: 0 21px 21px 0;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .product-badge {
+    border-radius: 9px 0 8px 0;
+    background-color: #476f00;
+    align-self: flex-start;
+    z-index: 10;
+    display: flex;
+    margin-top: -8px;
+    min-height: 33px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 12px;
+
+  }
+  
+  .badge-text {
+    
+    align-self: stretch;
+    margin: auto 0;
+    color: white;
+  }
+  
+  .product-image {
+    aspect-ratio: 1.61;
+    object-fit: contain;
+    object-position: center;
+    width: 153px;
+    align-self: flex-end;
+    margin-top: -9px;
+    max-width: 100%;
+  }
+  
+  .product-brand {
+    color: #b3aeae;
+    line-height: 16px;
+    opacity: var(--sds-size-stroke-border);
+    margin-top: 28px;
+  }
+  
+  .product-name {
+    color: #000;
+    opacity: var(--sds-size-stroke-border);
+    margin-top: 0px;
+  }
+  
+  .product-weight {
+    border-radius: 7px;
+    align-self: stretch;
+    display: flex;
+    margin-top: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #b3aeae;
+    justify-content: center;
+    padding: 6px 12px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .weight-text {
+    opacity: var(--sds-size-stroke-border);
+  }
+  
+  .product-price {
+    color: #000;
+    opacity: var(--sds-size-stroke-border);
+    margin-top: 13px;
+  }
+  
+  .add-to-cart-container {
+    display: flex;
+    margin-top: 65px;
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+  
+  .cart-icon {
+    aspect-ratio: 1.05;
+    object-fit: contain;
+    object-position: center;
+    width: 39px;
+    border-radius: 2px;
+    border-radius: 7px;
+    align-self: stretch;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    justify-content: center;
+    padding: 6px 12px;
+    border: 1px solid #d9d9d9;
+  }
+
+  .drop{
+   position: relative;
+   left: 270%;
+  }
+  
+  .add-button {
+    margin: 0;
+    border-color: red;
+    color: red;
+    width: 80%;
+    border-radius: 8px 8px 8px 8px;
+
+  }
+  
+  @media (max-width: 991px) {
+    .smart-basket-container {
+      padding: 0 20px;
+    }
+  
+    .product-card {
+      margin-top: 40px;
+    }
+  
+    .product-image-container {
+      padding-right: 20px;
+      white-space: initial;
+    }
+  
+    .product-badge {
+      white-space: initial;
+    }
+  
+    .product-weight {
+      padding-right: 20px;
+    }
+  
+    .add-to-cart-container {
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+ 

@@ -1,0 +1,38 @@
+<app-nav></app-nav>
+<div class="row justify-content-around">
+    <div class="col-lg-4">
+        <div class="border rounded">
+            <a href="#">
+                <img src="{{productList.productImageUrl}}" class="img-fluid rounded img1" alt="Image">
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <p class="grey text-decoration-underline">Fresho!</p>
+        <h4 class="fw-bold mb-1">{{productList.productName}}</h4>
+        <p class="grey">MRP:  <span class="grey text-decoration-line-through">₹{{productList.productPrice+10}}</span></p>
+        <p class="green">You save: <span class="fw-bold">{{((((productList.productPrice+10)-(productList.productPrice))/productList.productPrice)*100).toFixed(0)}}% off </span></p>
+        <h5 class=" mb-1">Price: ₹{{productList.productPrice}} </h5>
+        <p class="grey">(inclusive of all taxes)</p>
+        <div class="input-group quantity mb-5" style="width: 100px;">
+            <div class="input-group-btn">
+                <button class="btn btn-sm btn-minus rounded-circle bg-light border" (click)="minus()" >
+                    <i class="fa fa-minus"></i>
+                </button>
+            </div>
+            <input type="text" class="form-control form-control-sm text-center border-0" [(ngModel)]="noprods">
+            <div class="input-group-btn">
+                <button class="btn btn-sm btn-plus rounded-circle bg-light border" (click)="plus()">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="add-to-cart-container">
+            <button  class="add-button" (click)="addtocart(productList)"><span class="white">Add to basket</span></button>
+          </div>
+        <p class="mb-4">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
+        <p class="mb-4">Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p> 
+    </div>
+    <app-footer></app-footer>
+</div>
+

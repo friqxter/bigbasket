@@ -1,0 +1,52 @@
+.header{
+    height: 280px;
+    padding:30px 40px;
+    display: flex;
+    background-color: #fff;
+}
+.site-slogan{
+    width: 420px;
+    margin-left: 50px;
+    text-align: center;
+}
+h2{
+    font-size: 45px;
+}
+.carousel-inner{
+    height: 280px;
+}
+
+.carousel {
+    padding: 50px;
+}
+.bg-bskt2{
+    background-color: 
+
+    #476f00;
+    color: white;
+    
+    padding: 0;
+    margin: auto;
+    width:13%;
+ }
+ .bg-bskt3{
+    background-color: 
+
+    #ececec;
+    margin: auto;
+    padding: 0;
+    width:13%;
+ }
+
+  .row1{
+    width: 90%;
+    margin: auto;
+  }
+
+  .text1{
+
+    text-align: center;
+    font-weight: bold;
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }

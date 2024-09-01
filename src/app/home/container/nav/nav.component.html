@@ -1,0 +1,54 @@
+<hr>
+<div class="container-fluid shadow px-11 mb-5 bg-body rounded ">
+    <div class="row justify-content-around rowww align-items-center">
+      <div class="col-lg-2">
+        <a class="navbar-brand " href="#">
+            <img src="/assets/logo.jpg" alt="" height="100">
+          </a>    
+      </div>
+      <div class="col-lg-5">
+        <div class="d-flex">
+            <input style="width: 100%;margin-left: 5%;" class="form-control me-2" type="search" placeholder="Search for products" aria-label="Search" [(ngModel)]="searchText" >
+            <button class="btn btn-outline-success" type="submit" (click)="onClick3()">Search</button>
+        </div>
+      </div>
+      <div class="col-lg-2" *ngIf=(displayNotification)>
+        <h6 class="text-center"  style="color:#A0CD4A; margin: 0;">Welcome {{nameDisplay}}</h6>
+        </div>
+        <div class="col-lg-2" *ngIf=!(displayNotification)>
+          <button class="btn bg-bskt3" style="width: 80%; margin-left: 30%;"><p class="text1" style="font-size: 15px;"> <i class="fa-solid fa-compass"></i>Select location</p></button>   
+        </div>
+      <div class="col-lg-3">
+        <div  class="text-center" >
+          <button  *ngIf=!(displayNotification)  (click)="onClick()" data-mdb-button-init data-mdb-ripple-init class="btn bg-bskt"
+          style="color: white;font-size: 20px;padding-top: 0.5rem; padding-bottom: 0.5rem; margin-left: 6%;">{{nameDisplay}}</button>
+          <button class="btn btst" style="background-color: #FF7F7F;" (click)="onClick2()">
+            <i style="font-size: 20px; color: white;padding-top: 0.5rem; padding-bottom: 0.5rem;" class="fa-solid fa-basket-shopping"></i>
+            <div style="font-size: 8px;" class="badge bg-danger">{{totalItem}}</div>
+          </button>
+      </div>
+      </div>
+    </div>
+<div class="row jusify-content-center align-items-center">
+<div  class="col">
+    <nav class="navbar rowww navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div style="width: 98%; margin: auto;"class="navbar-nav">
+              <button class="btn bg-bskt2 col-lg-1 "><p class="text1">Shop</p></button>
+              <a routerLink="/home" class="nav-link active pad" aria-current="page" >Home</a>
+              <a class="nav-link pad" >Features</a>
+              <a class="nav-link pad"  >Pricing</a>
+              <a class="nav-link pad"  >Contact</a>
+              <a class="nav-link pad" >Combos </a>
+              <button class="btn bg-bskt3 col-lg-1 "><p class="text1">Offers</p></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+</div>
+</div>
+  </div>
