@@ -22,7 +22,6 @@ export class IndproComponent {
     this.productIdd = this.activatedroute.snapshot.paramMap.get('id');
     this.productList = this.productservice.products.find((x) => x.productId == this.productIdd);
   }
-
   addtocart(item: any) {
     this.cartService.addtoCart(item, this.noprods);
   }
